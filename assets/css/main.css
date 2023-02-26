@@ -64,14 +64,51 @@
   background-position: top center;
 }
 
+.shopnow {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding-bottom: 3px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
 .header-img__large {
   height: 640px;
 }
 .header-img__small {
   height: 314px;
 }
+.header-img__small a::after {
+  position: absolute;
+  background: rgb(235, 2, 2);
+  height: 2px;
+  width: 83px;
+  content: "";
+  bottom: 0;
+  left: 0;
+}
+.header-img__small p {
+  opacity: 0.7;
+}
 .header-img__text {
   margin-top: 12em;
+}
+.header-img__text h1 {
+  font-family: "Cookie", cursive;
+  font-size: 70px;
+}
+.header-img__text p {
+  opacity: 0.6;
+}
+.header-img__text a::after {
+  position: absolute;
+  background: rgb(235, 2, 2);
+  height: 2px;
+  width: 83px;
+  content: "";
+  bottom: 0;
+  left: 0;
 }
 .header-img__textsm {
   margin-top: 4em;
@@ -87,15 +124,39 @@
   font-size: 15px;
 }
 
+.bd-red::after {
+  position: absolute;
+  background: rgb(235, 2, 2);
+  height: 2px;
+  width: 20px;
+  content: "";
+  left: 200px;
+}
+
 .product {
   padding-top: 50px;
 }
 .product-title {
   padding-bottom: 50px;
+  position: relative;
+}
+.product-title h4::after {
+  position: absolute;
+  background: rgb(235, 2, 2);
+  height: 2px;
+  width: 65px;
+  content: "";
+  bottom: 55px;
+  left: 0;
+}
+.product-title__list {
+  padding-left: 200px;
+  position: relative;
 }
 .product-title__list a {
   color: black;
   margin-right: 30px;
+  padding-right: 20px;
 }
 .product-item {
   text-align: center;
@@ -130,14 +191,16 @@
   text-decoration: none;
   color: black;
 }
-.product-item__rating span {
+
+.rating span {
   color: #e7c116;
   font-size: 15px;
   margin-right: -8px;
 }
-.product-item p {
+
+.price {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .banner {
@@ -151,21 +214,265 @@
   text-transform: uppercase;
 }
 .banner-text p {
-  color: red;
+  color: rgb(235, 2, 2);
   font-size: 20px;
 }
 .banner-text h1 {
   text-transform: capitalize;
+  font-family: "Cookie", cursive;
+  font-size: 80px;
 }
-.banner-text a {
-  text-decoration: none;
-  color: black;
-  margin-top: 20px;
-  font-weight: bold;
+.banner-text a::after {
+  position: absolute;
+  background: rgb(235, 2, 2);
+  height: 2px;
+  width: 100%;
+  content: "";
+  bottom: 0;
+  left: 0;
 }
 
 .carousel-indicators button {
   width: 14px !important;
   height: 14px !important;
   border-radius: 50%;
+}
+
+.trend {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.trend-title {
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.trend-title h4 {
+  position: relative;
+  padding-bottom: 5px;
+}
+.trend-title h4::after {
+  position: absolute;
+  background: rgb(235, 2, 2);
+  height: 2px;
+  width: 70px;
+  content: "";
+  bottom: 0;
+  left: 0;
+}
+
+.trend-item {
+  padding-bottom: 30px;
+}
+.trend-item__img {
+  padding-right: 20px;
+}
+.trend-item__text p {
+  margin-bottom: 4px;
+}
+
+.discount {
+  margin-bottom: 100px;
+}
+.discount__img img {
+  max-width: 100%;
+  min-width: 100%;
+}
+.discount__text {
+  height: 380px;
+  background: #f4f4f4;
+  text-align: center;
+  justify-content: center;
+  padding: 70px;
+}
+.discount__text a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 5px;
+}
+.discount__text a::after {
+  position: absolute;
+  background: rgb(235, 2, 2);
+  height: 2px;
+  width: 100%;
+  content: "";
+  bottom: 0;
+  left: 0;
+}
+.discount__text__title {
+  position: relative;
+  z-index: 1;
+}
+.discount__text__title span {
+  text-transform: uppercase;
+  color: black;
+  padding-left: 15px;
+}
+.discount__text__title h2 {
+  color: rgb(235, 2, 2);
+  font-size: 60px;
+  font-family: "Cookie", cursive;
+  text-transform: capitalize;
+}
+.discount__text__title h5 {
+  padding-left: 20px;
+}
+.discount__text__title::after {
+  content: "";
+  position: absolute;
+  background: white;
+  left: 120px;
+  top: -50px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.clock {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.clock ul {
+  list-style: none;
+}
+.clock ul li {
+  padding-right: 50px;
+  font-size: 15px;
+}
+.clock ul li span {
+  font-size: 40px;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.services-item {
+  margin-bottom: 50px;
+}
+.services-item span {
+  color: rgb(235, 2, 2);
+  font-size: 50px;
+}
+.services-item__des {
+  padding-left: 20px;
+}
+.services-item__des h6 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 17px;
+}
+.services-item__des p {
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+.instagram {
+  margin-bottom: 50px;
+}
+.instagram-item {
+  position: relative;
+}
+.instagram-item__img {
+  width: 100%;
+  height: 10%;
+}
+.instagram-item__text {
+  position: absolute;
+  text-align: center;
+  top: 90px;
+  left: 40px;
+  opacity: 0;
+}
+.instagram-item__text i {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.instagram-item__text a {
+  text-decoration: none;
+  color: black;
+}
+.instagram-item:hover .instagram-item__text {
+  opacity: 1;
+}
+.instagram-item:hover .instagram-item__img {
+  opacity: 0.2;
+  transition: all 0.3s ease;
+}
+
+.footer-logo a img {
+  padding-bottom: 20px;
+}
+.footer-logo p {
+  opacity: 0.7;
+}
+.footer-payment a img {
+  padding-right: 10px;
+}
+.footer-link h6 {
+  padding-bottom: 10px;
+}
+.footer-link a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+}
+.footer-link ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-link ul li {
+  padding-bottom: 10px;
+}
+.footer-news h6 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.footer-news form {
+  position: relative;
+  padding-bottom: 25px;
+}
+.footer-news form input {
+  height: 50px;
+  width: 100%;
+  border-radius: 50px;
+  padding-left: 30px;
+  opacity: 0.7;
+  border: 1px solid;
+}
+.footer-news form button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: rgb(235, 2, 2);
+  color: white;
+  border-radius: 50px;
+  height: 40px;
+  width: 130px;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+}
+.footer-social {
+  margin-bottom: 50px;
+}
+.footer-social a {
+  padding-right: 10px;
+}
+.footer-social a i {
+  background: rgb(240, 204, 204);
+  color: black;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding-top: 10px;
+  padding-left: 11px;
+}
+.footer-copyright {
+  border-top: 1px solid rgb(241, 214, 214);
+  text-align: center;
+  opacity: 0.7;
+  padding: 20px;
 }/*# sourceMappingURL=main.css.map */
